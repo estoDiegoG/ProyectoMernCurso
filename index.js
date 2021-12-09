@@ -29,6 +29,6 @@ app.get('/',(req,res)=>{
 })
 
 //arrancar app
-app.listen(port, '0.0.0.0.',()=>{
+app.listen(port, localhost,()=>{
     console.log('El servidor esta funcionando en el puerto '+ port)
 });
