@@ -9,7 +9,8 @@ const app = express();
 conectarDB();
 
 //habilitar cors
-app.use(cors());
+app.use(cors({credentials:true,origin: 'https://aqueous-garden-41189.herokuapp.com'}));
+app.options("*",cors());
 
 //habilitar express json
 app.use(express.json({extender:true}));
